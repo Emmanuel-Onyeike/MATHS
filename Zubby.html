@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formula</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var a = 2;
+            var b = 6;
+            var c = 14;
+            var s = (a + b + c) / 2;
+            var area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+            document.getElementById("content").innerHTML = "The semi-perimeter of a triangle with side lengths " + a + ", " + b + ", and " + c + " is " + s + ".<br>The area of this triangle is " + area + ".";
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Triangle Area Formula</h1>
+        <p id="content"></p>
+        <a href="assignment.html"><button>Go to Base*Height</button></a>
+        <a href="index.html"><button>Go back to Homepage</button></a>
+    </div>
+</body>
+</html>
